@@ -60,15 +60,33 @@
           </div>
         </div>
 
-        <!-- proyects container -->
+        <!-- proyects container items-->
         <div class="row bg-info ">
 
           <div class="col-lg-4 col-md-6 portfolio-item  filter-XF ">
+            <!-- item card -->
             <div class="card m-0 p-0">
               <img src="/img/mobile/app2.png" class="card-img" alt="app 1">
               <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light p-2 m-0 rounded-bottom">
-                  <h5 class="card-title">App 1</h5>
+                <div class="bg-card text-light px-2 m-0 rounded-bottom">
+                  <div class="d-flex flex-row justify-content-between align-items-center">
+                    <h5 class="card-title ">App 1</h5>
+                    <button class="btn btn-outline-light my-1" data-bs-toggle="modal" data-bs-target="#app1"><i class="bi bi-arrows-fullscreen"></i></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- item modal info -->
+            <div class="modal fade" id="app1" tabindex="-1" area-labelledby="nameApp" aria-hidden="false">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="nameApp">App 1</h5>
+                    <button type="button" class="btn" data-bs-dismiss="modal" area-label="Close"><i class="bi bi-x-circle-fill fs-4"></i></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                  </div>
                 </div>
               </div>
             </div>
@@ -126,16 +144,6 @@
         </div>
       </div>
     </section>
-    <!-- 
-    <div class="col-lg-4 col-md-6 portfolio-item filter-XF">
-      <div class="card portfolio-wrap">
-        <img src="/img/mobile/app1.webp" class="img-fluid w-50" alt="app 1">
-        <div class="card-img-overlay d-flex flex-column justify-content-end p-0">
-          <div class="bg-card text-light p-2">
-            <h5 class="card-title">App 1</h5>
-        </div>
-      </div>
-    </div> -->
   </main>
 
 

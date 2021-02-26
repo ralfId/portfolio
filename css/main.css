@@ -1,0 +1,247 @@
+
+@charset "UTF-8";
+
+
+/* ----------------------- general ----------------------- s*/
+main{
+    margin-left: 18.7em;
+}
+
+section{
+    padding: 2em 1em;
+    overflow: hidden;
+}
+.section-bg{
+    background: #f5f8fd;
+}
+/* ----------------------- header ----------------------- */
+#header{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 18.7em;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 1em;
+    background: #040b14;
+    overflow-y: auto;
+}
+
+#header .profile img{
+    margin: 1em auto;
+    display: block;
+    width: 8em;
+    border: 0.5em solid #2c2f3f;
+}
+
+#header .profile h1{
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+}
+
+#header .profile .social-links a{
+    font-size: 1.3em;
+    display: inline-block;
+    background-color: #212431;
+    color: #fff;
+    line-height: 1;
+    padding: 0.5em 0;
+    margin-right: 0.2em;
+    border-radius: 50%;
+    text-align: center;
+    width: 2.2em;
+    height: 2.2em;
+    transition: 0.3s;
+}
+
+#header .profile .social-links a:hover{
+    background: #149ddd;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+/* ----------------------- Menu ----------------------- */
+.nav-menu{
+    padding: 1.8em 0 0 0;
+}
+
+.nav-menu *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu > ul > li{
+    position: relative;
+    white-space: nowrap;
+}
+.nav-menu a{
+    display: flex;
+    align-items: center;
+    color: #a8a9b4;
+    padding: 0.7em 0.9em;
+    margin-bottom: 0.5em;
+    transition: 0.3s;
+    font-size: 1em;
+}
+
+.nav-menu a i{
+    font-size: 1.5em;
+    padding-right: 0.5em;
+    color: #6f7180;
+}
+
+.nav-menu a:hover, .nav-menu .active, .nav-menu li:hover > a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-menu a:hover i, .nav-menu .active i, .nav-menu li:hover > a i{
+    color: #149ddd;
+}
+
+/* ----------------------- Mobile navigation ----------------------- */
+.mobile-nav-toggle{
+    position: fixed;
+    right: 0.5em;
+    top: 0.5em;
+    z-index: 9998;
+    border: 0;
+    font-size: 1.4em;
+    transition: all 0.4s;
+    outline: none !important;
+    background-color: #149ddd;
+    color: #fff;
+    width: 2em;
+    height: 2em;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.mobile-nav-active {
+    overflow: hidden;
+}
+
+.mobile-nav-active  #header{
+    left: 0;
+}
+
+/* ----------------------- footer ----------------------- */
+#footer{
+    padding: 1em;
+    color: #f4f6fd;
+    font-size: 0.9em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 18.7em;
+    z-index: 9999;
+    background: #040b14;
+}
+
+#footer .copyright{
+   text-align: center;  
+}
+
+#footer .credits{
+    padding-top: 0.1em;
+    text-align: center;
+    font-size: 0.8;
+    color: #eaebf0;
+}
+
+#hero{
+    width: 100%;
+    height: 100vh;
+    background: url('../img/hero-bg.jpg') top center;
+    background-size: cover;
+}
+
+#hero::before{
+    content: "";
+    background: rgba(5, 13, 24, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container{
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#hero h1{
+    margin: 0 0 0.7em 0;
+    font-size: 4em;
+    font-weight: 700;
+    color: #fff;
+}
+
+#hero p{
+    color: #fff;
+    margin-bottom: 2em;
+    font-size: 1.6em;
+}
+
+/* ----------------------- portfolio  breadcrums----------------------- */
+.portfolio .portfolio-item{
+    margin-bottom: 1em;
+}
+.portfolio .portfolio-filters{
+    margin: 0 auto 2.1em auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 3.1em;
+    padding: 0.1em 1em;
+}
+
+.portfolio .portfolio-filters li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 0.6em 1em 0.5em 1em;
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-filters li:hover, .portfolio .portfolio-filters li.filter-active{
+    color: #149ddd;
+}
+
+/* ----------------------- portfolio contaier and items----------------------- */
+
+
+.bg-card{
+    background: rgba(39, 40, 41, 0.6);
+}
+
+
+
+.portfolio-item img{
+ width: auto;  
+ height: 15vw;
+ object-fit:cover; 
+}
+.portfolio-item .item-desc{
+    padding: 0;
+}
+

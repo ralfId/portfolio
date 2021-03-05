@@ -10,9 +10,10 @@
   <!-- CSS CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!-- local css files -->
-  <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css">
+  <link rel="stylesheet" href="/vendor/bootstrap-5/css/bootstrap.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/responsive.css">
+  <link rel="stylesheet" href="/css/mobile.css">
 
 
 
@@ -46,7 +47,7 @@
   </header>
 
   <main>
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="portfolio" class="portfolio">
       <div class="container">
         <!-- breadcrums -->
         <div class="d-flex justify-content-around ">
@@ -61,85 +62,46 @@
         </div>
 
         <!-- proyects container items-->
-        <div class="row bg-info ">
+        <div id="appContainer" class="d-flex flex-row justify-content-between flex-wrap">
 
-          <div class="col-lg-4 col-md-6 portfolio-item  filter-XF ">
-            <!-- item card -->
-            <div class="card m-0 p-0">
-              <img src="/img/mobile/app2.png" class="card-img" alt="app 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light px-2 m-0 rounded-bottom">
-                  <div class="d-flex flex-row justify-content-between align-items-center">
-                    <h5 class="card-title ">App 1</h5>
-                    <button class="btn btn-outline-light my-1" data-bs-toggle="modal" data-bs-target="#app1"><i class="bi bi-arrows-fullscreen"></i></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- item modal info -->
-            <div class="modal fade" id="app1" tabindex="-1" area-labelledby="nameApp" aria-hidden="false">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="nameApp">App 1</h5>
-                    <button type="button" class="btn" data-bs-dismiss="modal" area-label="Close"><i class="bi bi-x-circle-fill fs-4"></i></button>
-                  </div>
-                  <div class="modal-body">
-                    
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item  filter-XF">
-            <div class="card">
-              <img src="/img/mobile/app2.png" class="card-img" alt="app 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light p-2 ">
-                  <h5 class="card-title">App 1</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6  portfolio-item filter-XF">
-            <div class="card">
-              <img src="/img/mobile/app3.jpg" class="card-img" alt="app 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light p-2 ">
-                  <h5 class="card-title">App 1</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6  portfolio-item filter-XF">
-            <div class="card">
-              <img src="/img/mobile/app1.webp" class="card-img" alt="app 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light p-2 ">
-                  <h5 class="card-title">App 1</h5>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item  filter-XF">
-            <div class="card">
-              <img src="/img/mobile/app2.png" class="card-img" alt="app 1">
-              <div class="card-img-overlay d-flex flex-column justify-content-end item-desc">
-                <div class="bg-card text-light p-2 ">
-                  <h5 class="card-title">App 1</h5>
-                </div>
+          <div class="card app-card">
+            <img
+              src="/img/mobile/app1.webp"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, aut.
+              </p>
+              <div class="d-flex flex-row justify-content-between">
+                <a href="#!" class="btn btn-outline-dark"><i class="bi bi-github"></i><span>&nbsp;Proyect</span></a>
+              <a href="#!" class="btn btn-outline-dark"><i class="bi bi-download"></i><span>&nbsp;Download</span></a>
               </div>
             </div>
           </div>
 
 
-          
-         
-
+          <!-- app card template -->
+          <!-- <div class="card app-card">
+            <img
+              src=""
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up the bulk of the
+                card's content.
+              </p>
+              <div class="d-flex flex-row justify-content-between">
+                <a href="#!" class="btn btn-outline-dark"><i class="bi bi-github"></i><span>&nbsp;Proyect</span></a>
+              <a href="#!" class="btn btn-outline-dark"><i class="bi bi-download"></i><span>&nbsp;Download</span></a>
+              </div>
+            </div>
+          </div> -->
 
         </div>
       </div>
@@ -148,7 +110,7 @@
 
 
 
-  <footer id="footer" >
+  <footer id="footer">
     <div class="container">
       <div class="copyright"> &copy; <strong>Rafael Ibañez Diego 2021</strong></div>
       <div class="credits">Designed by Rafael Ibañez Diego</div>
@@ -158,7 +120,7 @@
 
   <!-- scripts zone -->
   <script src="js/jquery-3.5.1.min.js"></script>
-  <script src="bootstrap-5/js/bootstrap.js"></script>
+  <script src="/vendor/bootstrap-5/js/bootstrap.js"></script>
   <script src="js/main.js"></script>
 </body>
 

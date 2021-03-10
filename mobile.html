@@ -51,7 +51,8 @@
     <section id="portfolio" class="portfolio">
       <div class="container">
         <!-- breadcrums -->
-        <div class="d-flex justify-content-around ">
+        <!-- TODO: enable when creating apps with new technologies -->
+        <!-- <div class="d-flex justify-content-around ">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul class="portfolio-filters">
               <li data-filter="*" class="filter-active">All</li>
@@ -60,25 +61,26 @@
               <li data-filter=".filter-S">Swift</li>
             </ul>
           </div>
-        </div>
+        </div> -->
 
         <!-- proyects container items-->
-        <div id="appContainer" class="d-flex flex-row justify-content-between flex-wrap">
+        <div id="appContainer" class="d-flex flex-row justify-content-around flex-wrap">
 
-          <div class="card app-card">
+          <div class="card app-card shadow">
             <img
-              src="img/mobile/app1.webp"
+              src="img/mobile/1_CovidInfo.png"
               class="card-img-top"
               alt="..."
             />
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Covid Info</h5>
               <p class="card-text">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, aut.
+                Provide reliable information on the progress of Covid-19. 
+                Show the numerical development of the pandemic globally and by country.
               </p>
               <div class="d-flex flex-row justify-content-between">
-                <a href="#!" class="btn btn-outline-dark"><i class="bi bi-github"></i><span>&nbsp;Proyect</span></a>
-              <a href="#!" class="btn btn-outline-dark"><i class="bi bi-download"></i><span>&nbsp;Download</span></a>
+                <a href="https://github.com/ralfId/CovidInfo" target="_blank" class="btn btn-outline-dark"><i class="bi bi-github"></i><span>&nbsp;Proyect</span></a>
+                <a href="https://github.com/ralfId/CovidInfo/releases/download/v1/com.covidinfo.apk" target="_blank" class="btn btn-outline-dark"><i class="bi bi-download"></i><span>&nbsp;Download apk</span></a>
               </div>
             </div>
           </div>
